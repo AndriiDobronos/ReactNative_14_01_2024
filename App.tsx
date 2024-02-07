@@ -1,15 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import MyComponent from "./src/CastomHuks/ExampleApi";
+import MyBackHandler from "./src/CastomHuks/ExampleBackHandler";
+import MySwitcherKeyboard from "./src/CastomHuks/ExampleKeyboart";
+import ItemListRefresh from "./src/CastomHuks/ItemListRefresh";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={{fontSize:50}}>
+      <Text style={{fontSize:50,marginBottom:20}}>
         Hello world
       </Text>
-      <Text>
-        Open up App.js to start working on your app!
-      </Text>
+
+        <MyComponent />
+        <MyBackHandler />
+        <MySwitcherKeyboard />
+        <ItemListRefresh />
+
       <StatusBar style="auto" />
     </View>
   );
